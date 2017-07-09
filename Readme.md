@@ -1,4 +1,4 @@
-## NOTEICE
+## NOTICE:
 
 This repository is still under construction to be more generalized for wider consumption. 
 
