@@ -1,0 +1,8 @@
+rdpserverprofile module
+=======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpserverprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

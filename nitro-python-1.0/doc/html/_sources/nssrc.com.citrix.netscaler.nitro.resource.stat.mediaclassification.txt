@@ -1,0 +1,9 @@
+mediaclassification package
+===========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+	mediaclassification_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.mediaclassification.mediaclassification_stats>

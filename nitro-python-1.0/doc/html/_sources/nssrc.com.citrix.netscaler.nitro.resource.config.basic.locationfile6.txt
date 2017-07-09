@@ -1,0 +1,8 @@
+locationfile6 module
+====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.basic.locationfile6
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

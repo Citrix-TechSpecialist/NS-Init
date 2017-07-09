@@ -1,0 +1,8 @@
+icapolicy_icaglobal_binding module
+==================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ica.icapolicy_icaglobal_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

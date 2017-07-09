@@ -1,0 +1,8 @@
+lsndslite_stats module
+======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.lsn.lsndslite_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

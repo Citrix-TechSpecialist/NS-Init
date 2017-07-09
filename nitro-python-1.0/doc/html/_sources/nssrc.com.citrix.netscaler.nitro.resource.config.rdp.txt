@@ -1,0 +1,11 @@
+rdp package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+
+	rdpclientprofile <nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile>
+	rdpconnections <nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpconnections>
+	rdpserverprofile <nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpserverprofile>

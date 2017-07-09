@@ -1,0 +1,8 @@
+extendedmemoryparam module
+==========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.basic.extendedmemoryparam
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

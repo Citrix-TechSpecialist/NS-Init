@@ -1,0 +1,28 @@
+cr package
+==========
+
+Subpackages
+-----------
+
+.. toctree::
+
+	craction <nssrc.com.citrix.netscaler.nitro.resource.config.cr.craction>
+	crpolicy <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crpolicy>
+	crpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crpolicy_binding>
+	crpolicy_crvserver_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crpolicy_crvserver_binding>
+	crvserver <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver>
+	crvserver_appflowpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_appflowpolicy_binding>
+	crvserver_appfwpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_appfwpolicy_binding>
+	crvserver_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_binding>
+	crvserver_cachepolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_cachepolicy_binding>
+	crvserver_cmppolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_cmppolicy_binding>
+	crvserver_crpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_crpolicy_binding>
+	crvserver_cspolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_cspolicy_binding>
+	crvserver_feopolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_feopolicy_binding>
+	crvserver_filterpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_filterpolicy_binding>
+	crvserver_icapolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_icapolicy_binding>
+	crvserver_lbvserver_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_lbvserver_binding>
+	crvserver_policymap_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_policymap_binding>
+	crvserver_responderpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_responderpolicy_binding>
+	crvserver_rewritepolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_rewritepolicy_binding>
+	crvserver_spilloverpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.cr.crvserver_spilloverpolicy_binding>

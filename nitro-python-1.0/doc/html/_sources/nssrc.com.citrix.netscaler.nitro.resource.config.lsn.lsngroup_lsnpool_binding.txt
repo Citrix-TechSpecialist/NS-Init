@@ -1,0 +1,8 @@
+lsngroup_lsnpool_binding module
+===============================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnpool_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

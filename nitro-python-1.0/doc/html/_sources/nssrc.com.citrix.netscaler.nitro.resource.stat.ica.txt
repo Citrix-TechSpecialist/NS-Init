@@ -1,0 +1,9 @@
+ica package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+
+	icapolicy_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.ica.icapolicy_stats>

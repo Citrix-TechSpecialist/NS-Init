@@ -1,0 +1,10 @@
+smpp package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+
+	smppparam <nssrc.com.citrix.netscaler.nitro.resource.config.smpp.smppparam>
+	smppuser <nssrc.com.citrix.netscaler.nitro.resource.config.smpp.smppuser>

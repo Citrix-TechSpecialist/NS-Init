@@ -1,0 +1,8 @@
+nspartition module
+==================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

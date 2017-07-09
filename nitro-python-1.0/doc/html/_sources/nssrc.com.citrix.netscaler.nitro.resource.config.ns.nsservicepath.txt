@@ -1,0 +1,8 @@
+nsservicepath module
+====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

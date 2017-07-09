@@ -1,0 +1,8 @@
+lsnip6profile module
+====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnip6profile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

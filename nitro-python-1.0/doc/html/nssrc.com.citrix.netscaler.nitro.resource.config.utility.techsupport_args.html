@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args">
+<span id="nssrc-com-citrix-netscaler-nitro-resource-config-utility-techsupport-args-module"></span><h1>nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args">
+<em class="property">class </em><tt class="descname">techsupport_args</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides additional arguments required for fetching the techsupport resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.scope">
+<tt class="descname">scope</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.scope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this option to gather data on the present node, all cluster nodes, or for the specified partitions. The CLUSTER scope generates smaller abbreviated archives for all nodes. The PARTITION scope collects the admin partition in addition to those specified. The partitionName option is only required for the PARTITION scope.&lt;br/&gt;Default value: NODE&lt;br/&gt;Possible values = NODE, CLUSTER, PARTITION.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.partitionname">
+<tt class="descname">partitionname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.partitionname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the partition.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.upload">
+<tt class="descname">upload</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.upload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Securely upload the collector archive to Citrix Technical Support using SSL. MyCitrix credentials will be required. If used with the -file option, no new collector archive is generated. Instead, the specified archive is uploaded. Note that the upload operation time depends on the size of the archive file, and the connection bandwidth.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.proxy">
+<tt class="descname">proxy</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the proxy server to be used when uploading a collector archive. Use this parameter if the NetScaler appliance does not have direct internet connectivity. The basic format of the proxy string is: &#8220;proxy_IP:&lt;proxy_port&gt;&#8221; (without quotes). If the proxy requires authentication the format is: &#8220;username:password&#64;proxy_IP:&lt;proxy_port&gt;&#8221;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.casenumber">
+<tt class="descname">casenumber</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.casenumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the associated case or service request number if it has already been opened with Citrix Technical Support.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.file">
+<tt class="descname">file</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name (with full path) of the collector archive file to be uploaded. If this is specified, no new collector archive is generated.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.description">
+<tt class="descname">description</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides a text description for the the upload, and can be used for logging purposes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.username">
+<tt class="descname">username</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.username" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies My Citrix user name, which is used to login to Citrix upload server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.password">
+<tt class="descname">password</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies My Citrix password, which is used to login to Citrix upload server.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope">
+<em class="property">class </em><tt class="descname">Scope</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope.NODE">
+<tt class="descname">NODE</tt><em class="property"> = 'NODE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope.NODE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope.CLUSTER">
+<tt class="descname">CLUSTER</tt><em class="property"> = 'CLUSTER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope.CLUSTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope.PARTITION">
+<tt class="descname">PARTITION</tt><em class="property"> = 'PARTITION'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.techsupport_args.Scope.PARTITION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.utility.techsupport_args.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

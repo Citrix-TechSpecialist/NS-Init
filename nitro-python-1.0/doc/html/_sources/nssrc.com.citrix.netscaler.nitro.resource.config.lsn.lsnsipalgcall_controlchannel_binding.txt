@@ -1,0 +1,8 @@
+lsnsipalgcall_controlchannel_binding module
+===========================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgcall_controlchannel_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

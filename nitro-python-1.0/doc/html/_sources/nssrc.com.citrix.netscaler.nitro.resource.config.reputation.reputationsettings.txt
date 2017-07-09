@@ -1,0 +1,8 @@
+reputationsettings module
+=========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.reputation.reputationsettings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

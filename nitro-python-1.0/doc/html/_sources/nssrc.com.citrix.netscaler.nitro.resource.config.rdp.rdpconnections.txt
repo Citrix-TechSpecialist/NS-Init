@@ -1,0 +1,8 @@
+rdpconnections module
+=====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpconnections
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

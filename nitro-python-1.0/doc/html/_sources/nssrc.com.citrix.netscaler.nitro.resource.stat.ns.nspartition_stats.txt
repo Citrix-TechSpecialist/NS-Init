@@ -1,0 +1,8 @@
+nspartition_stats module
+========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.ns.nspartition_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

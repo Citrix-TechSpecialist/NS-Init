@@ -1,0 +1,8 @@
+subscriberprofile module
+========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.subscriberprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

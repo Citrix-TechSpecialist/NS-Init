@@ -1,0 +1,8 @@
+smppuser module
+===============
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.smpp.smppuser
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

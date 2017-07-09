@@ -1,0 +1,9 @@
+reputation package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+	reputationsettings <nssrc.com.citrix.netscaler.nitro.resource.config.reputation.reputationsettings>

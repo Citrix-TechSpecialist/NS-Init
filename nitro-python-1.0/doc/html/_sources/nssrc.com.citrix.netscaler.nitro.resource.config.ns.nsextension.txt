@@ -1,0 +1,8 @@
+nsextension module
+==================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

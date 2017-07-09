@@ -1,0 +1,13 @@
+subscriber package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+	subscribergxinterface <nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.subscribergxinterface>
+	subscriberparam <nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.subscriberparam>
+	subscriberprofile <nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.subscriberprofile>
+	subscriberradiusinterface <nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.subscriberradiusinterface>
+	subscribersessions <nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.subscribersessions>

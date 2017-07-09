@@ -1,0 +1,8 @@
+sslvserver_stats module
+=======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.ssl.sslvserver_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

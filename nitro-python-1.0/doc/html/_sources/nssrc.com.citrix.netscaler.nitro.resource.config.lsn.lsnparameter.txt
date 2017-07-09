@@ -1,0 +1,8 @@
+lsnparameter module
+===================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnparameter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

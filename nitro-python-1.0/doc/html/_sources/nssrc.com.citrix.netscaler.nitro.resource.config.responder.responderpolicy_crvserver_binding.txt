@@ -1,0 +1,8 @@
+responderpolicy_crvserver_binding module
+========================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.responder.responderpolicy_crvserver_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

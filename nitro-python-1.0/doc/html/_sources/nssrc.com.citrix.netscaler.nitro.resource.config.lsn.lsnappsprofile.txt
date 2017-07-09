@@ -1,0 +1,8 @@
+lsnappsprofile module
+=====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

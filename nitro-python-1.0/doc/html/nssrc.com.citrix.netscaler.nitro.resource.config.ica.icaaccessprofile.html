@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>icaaccessprofile module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="ica package" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html" />
+    <link rel="next" title="icaaction module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaction.html" />
+    <link rel="prev" title="ica package" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaction.html" title="icaaction module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html" title="ica package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html" accesskey="U">ica package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile">
+<span id="icaaccessprofile-module"></span><h1>icaaccessprofile module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile">
+<em class="property">class </em><tt class="descname">icaaccessprofile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for ica accessprofile resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.name">
+<tt class="descname">name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the ICA accessprofile. Must begin with a letter, number, or the underscore character (_), and must contain only letters, numbers, and
+the hyphen (-), period (.) pound (#), space ( ), at (&#64;), equals (=), colon (:), and underscore characters. Cannot be changed after the ICA accessprofile is added.
+The following requirement applies only to the NetScaler CLI:
+If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, &#8220;my ica accessprofile&#8221; or &#8216;my ica accessprofile&#8217;).
+Each of the features can be configured as DEFAULT/DISABLED.
+Here, DISABLED means that the policy settings on the backend XenApp/XenDesktop server are overridden and the NetScaler makes the decision to deny access. Whereas DEFAULT means that the NetScaler allows the request to reach the XenApp/XenDesktop that takes the decision to allow/deny access based on the policy configured on it. For example, if ClientAudioRedirection is enabled on the backend XenApp/XenDesktop server, and the configured profile has ClientAudioRedirection as DISABLED, the NetScaler makes the decision to deny the request irrespective of the configuration on the backend. If the configured profile has ClientAudioRedirection as DEFAULT, then the NetScaler forwards the requests to the backend XenApp/XenDesktop server.It then makes the decision to allow/deny access based on the policy configured on it.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.connectclientlptports">
+<tt class="descname">connectclientlptports</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.connectclientlptports" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable automatic connection of LPT ports from the client when the user logs on.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientaudioredirection">
+<tt class="descname">clientaudioredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientaudioredirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable applications hosted on the server to play sounds through a sound device installed on the client computer, also allows or prevents users to record audio input.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.localremotedatasharing">
+<tt class="descname">localremotedatasharing</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.localremotedatasharing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable file/data sharing via the Reciever for HTML5.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientclipboardredirection">
+<tt class="descname">clientclipboardredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientclipboardredirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable the clipboard on the client device to be mapped to the clipboard on the server.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientcomportredirection">
+<tt class="descname">clientcomportredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientcomportredirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable COM port redirection to and from the client.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientdriveredirection">
+<tt class="descname">clientdriveredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientdriveredirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disables drive redirection to and from the client.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientprinterredirection">
+<tt class="descname">clientprinterredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientprinterredirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable client printers to be mapped to a server when a user logs on to a session.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.multistream">
+<tt class="descname">multistream</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.multistream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable the multistream feature for the specified users.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientusbdriveredirection">
+<tt class="descname">clientusbdriveredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.clientusbdriveredirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow Default access/Disable the redirection of USB devices to and from the client.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DEFAULT, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.refcnt">
+<tt class="descname">refcnt</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.refcnt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of entities using this accessprofile.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.builtin">
+<tt class="descname">builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.builtin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that the ICA accessprofile is a built-in (SYSTEM INTERNAL) type.&lt;br/&gt;Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.isdefault">
+<tt class="descname">isdefault</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.isdefault" title="Permalink to this definition">¶</a></dt>
+<dd><p>A value of true is returned if it is a default accessprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add icaaccessprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete icaaccessprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update icaaccessprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of icaaccessprofile resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the icaaccessprofile resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of icaaccessprofile resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the icaaccessprofile resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of icaaccessprofile resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Localremotedatasharing">
+<em class="property">class </em><tt class="descname">Localremotedatasharing</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Localremotedatasharing" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Localremotedatasharing.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Localremotedatasharing.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Localremotedatasharing.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Localremotedatasharing.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientprinterredirection">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Clientprinterredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientprinterredirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientprinterredirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientprinterredirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientprinterredirection.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientprinterredirection.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.MODIFIABLE">
+<tt class="descname">MODIFIABLE</tt><em class="property"> = 'MODIFIABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.MODIFIABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.DELETABLE">
+<tt class="descname">DELETABLE</tt><em class="property"> = 'DELETABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.DELETABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.IMMUTABLE">
+<tt class="descname">IMMUTABLE</tt><em class="property"> = 'IMMUTABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.IMMUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.PARTITION_ALL">
+<tt class="descname">PARTITION_ALL</tt><em class="property"> = 'PARTITION_ALL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Builtin.PARTITION_ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientclipboardredirection">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Clientclipboardredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientclipboardredirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientclipboardredirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientclipboardredirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientclipboardredirection.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientclipboardredirection.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientcomportredirection">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Clientcomportredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientcomportredirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientcomportredirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientcomportredirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientcomportredirection.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientcomportredirection.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientusbdriveredirection">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Clientusbdriveredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientusbdriveredirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientusbdriveredirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientusbdriveredirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientusbdriveredirection.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientusbdriveredirection.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Connectclientlptports">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Connectclientlptports</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Connectclientlptports" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Connectclientlptports.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Connectclientlptports.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Connectclientlptports.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Connectclientlptports.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientaudioredirection">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Clientaudioredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientaudioredirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientaudioredirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientaudioredirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientaudioredirection.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientaudioredirection.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Multistream">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Multistream</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Multistream" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Multistream.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Multistream.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Multistream.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Multistream.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientdriveredirection">
+<em class="property">class </em><tt class="descclassname">icaaccessprofile.</tt><tt class="descname">Clientdriveredirection</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientdriveredirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientdriveredirection.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientdriveredirection.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientdriveredirection.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile.Clientdriveredirection.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile_response">
+<em class="property">class </em><tt class="descname">icaaccessprofile_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.icaaccessprofile_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ca.html">ca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">icaaccessprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaction.html">icaaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaglobal_binding.html">icaglobal_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaglobal_icapolicy_binding.html">icaglobal_icapolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icapolicy.html">icapolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icapolicy_binding.html">icapolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icapolicy_crvserver_binding.html">icapolicy_crvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icapolicy_icaglobal_binding.html">icapolicy_icaglobal_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icapolicy_vpnvserver_binding.html">icapolicy_vpnvserver_binding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rise.html">rise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.wf.html">wf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.wi.html">wi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html"
+                        title="previous chapter">ica package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaction.html"
+                        title="next chapter">icaaction module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.ica.icaaccessprofile.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

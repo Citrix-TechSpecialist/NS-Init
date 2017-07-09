@@ -1,0 +1,8 @@
+policyevaluation module
+=======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.policy.policyevaluation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

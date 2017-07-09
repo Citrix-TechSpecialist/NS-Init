@@ -1,0 +1,8 @@
+vpnportaltheme module
+=====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.vpn.vpnportaltheme
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

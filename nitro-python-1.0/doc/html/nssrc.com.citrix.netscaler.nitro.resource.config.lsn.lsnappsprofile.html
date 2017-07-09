@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>lsnappsprofile module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="lsn package" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html" />
+    <link rel="next" title="lsnappsprofile_binding module" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile_binding.html" />
+    <link rel="prev" title="lsn package" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile_binding.html" title="lsnappsprofile_binding module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html" title="lsn package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html" accesskey="U">lsn package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile">
+<span id="lsnappsprofile-module"></span><h1>lsnappsprofile module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile">
+<em class="property">class </em><tt class="descname">lsnappsprofile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for LSN Application Profile resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.appsprofilename">
+<tt class="descname">appsprofilename</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.appsprofilename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the LSN application profile. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (&#64;), equals (=), and hyphen (-) characters. Cannot be changed after the LSN application profile is created. The following requirement applies only to the NetScaler CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, &#8220;lsn application profile1&#8221; or &#8216;lsn application profile1&#8217;).&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  127.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.transportprotocol">
+<tt class="descname">transportprotocol</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.transportprotocol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the protocol for which the parameters of this LSN application profile applies.&lt;br/&gt;Possible values = TCP, UDP, ICMP.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.ippooling">
+<tt class="descname">ippooling</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.ippooling" title="Permalink to this definition">¶</a></dt>
+<dd><p>NAT IP address allocation options for sessions associated with the same subscriber.
+Available options function as follows:
+* Paired - The NetScaler ADC allocates the same NAT IP address for all sessions associated with the same subscriber. When all the ports of a NAT IP address are used in LSN sessions (for same or multiple subscribers), the NetScaler ADC drops any new connection from the subscriber.
+* Random - The NetScaler ADC allocates random NAT IP addresses, from the pool, for different sessions associated with the same subscriber.
+This parameter is applicable to dynamic NAT allocation only.&lt;br/&gt;Default value: RANDOM&lt;br/&gt;Possible values = PAIRED, RANDOM.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.mapping">
+<tt class="descname">mapping</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.mapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type of LSN mapping to apply to subsequent packets originating from the same subscriber IP address and port.
+Consider an example of an LSN mapping that includes the mapping of the subscriber IP:port (X:x), NAT IP:port (N:n), and external host IP:port (Y:y).
+Available options function as follows: 
+* ENDPOINT-INDEPENDENT - Reuse the LSN mapping for subsequent packets sent from the same subscriber IP address and port (X:x) to any external IP address and port. 
+* ADDRESS-DEPENDENT - Reuse the LSN mapping for subsequent packets sent from the same subscriber IP address and port (X:x) to the same external IP address (Y), regardless of the external port.
+* ADDRESS-PORT-DEPENDENT - Reuse the LSN mapping for subsequent packets sent from the same internal IP address and port (X:x) to the same external IP address and port (Y:y) while the mapping is still active.&lt;br/&gt;Default value: ADDRESS-PORT-DEPENDENT&lt;br/&gt;Possible values = ENDPOINT-INDEPENDENT, ADDRESS-DEPENDENT, ADDRESS-PORT-DEPENDENT.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.filtering">
+<tt class="descname">filtering</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.filtering" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type of filter to apply to packets originating from external hosts.
+Consider an example of an LSN mapping that includes the mapping of subscriber IP:port (X:x), NAT IP:port (N:n), and external host IP:port (Y:y).
+Available options function as follows:
+* ENDPOINT INDEPENDENT - Filters out only packets not destined to the subscriber IP address and port X:x, regardless of the external host IP address and port source (Z:z).  The NetScaler ADC forwards any packets destined to X:x.  In other words, sending packets from the subscriber to any external IP address is sufficient to allow packets from any external hosts to the subscriber.
+* ADDRESS DEPENDENT - Filters out packets not destined to subscriber IP address and port X:x.  In addition, the ADC filters out packets from Y:y destined for the subscriber (X:x) if the client has not previously sent packets to Y:anyport (external port independent). In other words, receiving packets from a specific external host requires that the subscriber first send packets to that specific external host&#8217;s IP address.
+* ADDRESS PORT DEPENDENT (the default) - Filters out  packets not destined to subscriber IP address and port (X:x).  In addition, the NetScaler ADC filters out packets from Y:y destined for the subscriber (X:x) if the subscriber has not previously sent packets to Y:y.  In other words, receiving packets from a specific external host requires that the subscriber first send packets first to that external IP address and port.&lt;br/&gt;Default value: ADDRESS-PORT-DEPENDENT&lt;br/&gt;Possible values = ENDPOINT-INDEPENDENT, ADDRESS-DEPENDENT, ADDRESS-PORT-DEPENDENT.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.tcpproxy">
+<tt class="descname">tcpproxy</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.tcpproxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable TCP proxy, which enables the NetScaler appliance to optimize the  TCP traffic by using Layer 4 features.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.td">
+<tt class="descname">td</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.td" title="Permalink to this definition">¶</a></dt>
+<dd><p>ID of the traffic domain through which the NetScaler ADC sends the outbound traffic after performing LSN. 
+If you do not specify an ID, the ADC sends the outbound traffic through the default traffic domain, which has an ID of 0.&lt;br/&gt;Default value: 65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.l2info">
+<tt class="descname">l2info</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.l2info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable l2info by creating natpcbs for LSN, which enables the NetScaler appliance to use L2CONN/MBF with LSN.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add lsnappsprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete lsnappsprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update lsnappsprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of lsnappsprofile resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the lsnappsprofile resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of lsnappsprofile resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the lsnappsprofile resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of lsnappsprofile resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping">
+<em class="property">class </em><tt class="descname">Mapping</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping.ENDPOINT_INDEPENDENT">
+<tt class="descname">ENDPOINT_INDEPENDENT</tt><em class="property"> = 'ENDPOINT-INDEPENDENT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping.ENDPOINT_INDEPENDENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping.ADDRESS_DEPENDENT">
+<tt class="descname">ADDRESS_DEPENDENT</tt><em class="property"> = 'ADDRESS-DEPENDENT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping.ADDRESS_DEPENDENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping.ADDRESS_PORT_DEPENDENT">
+<tt class="descname">ADDRESS_PORT_DEPENDENT</tt><em class="property"> = 'ADDRESS-PORT-DEPENDENT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Mapping.ADDRESS_PORT_DEPENDENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering">
+<em class="property">class </em><tt class="descclassname">lsnappsprofile.</tt><tt class="descname">Filtering</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering.ENDPOINT_INDEPENDENT">
+<tt class="descname">ENDPOINT_INDEPENDENT</tt><em class="property"> = 'ENDPOINT-INDEPENDENT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering.ENDPOINT_INDEPENDENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering.ADDRESS_DEPENDENT">
+<tt class="descname">ADDRESS_DEPENDENT</tt><em class="property"> = 'ADDRESS-DEPENDENT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering.ADDRESS_DEPENDENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering.ADDRESS_PORT_DEPENDENT">
+<tt class="descname">ADDRESS_PORT_DEPENDENT</tt><em class="property"> = 'ADDRESS-PORT-DEPENDENT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Filtering.ADDRESS_PORT_DEPENDENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Tcpproxy">
+<em class="property">class </em><tt class="descclassname">lsnappsprofile.</tt><tt class="descname">Tcpproxy</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Tcpproxy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Tcpproxy.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Tcpproxy.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Tcpproxy.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Tcpproxy.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol">
+<em class="property">class </em><tt class="descclassname">lsnappsprofile.</tt><tt class="descname">Transportprotocol</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol.TCP">
+<tt class="descname">TCP</tt><em class="property"> = 'TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol.TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol.UDP">
+<tt class="descname">UDP</tt><em class="property"> = 'UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol.UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol.ICMP">
+<tt class="descname">ICMP</tt><em class="property"> = 'ICMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Transportprotocol.ICMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.L2info">
+<em class="property">class </em><tt class="descclassname">lsnappsprofile.</tt><tt class="descname">L2info</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.L2info" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.L2info.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.L2info.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.L2info.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.L2info.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Ippooling">
+<em class="property">class </em><tt class="descclassname">lsnappsprofile.</tt><tt class="descname">Ippooling</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Ippooling" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Ippooling.PAIRED">
+<tt class="descname">PAIRED</tt><em class="property"> = 'PAIRED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Ippooling.PAIRED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Ippooling.RANDOM">
+<tt class="descname">RANDOM</tt><em class="property"> = 'RANDOM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile.Ippooling.RANDOM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile_response">
+<em class="property">class </em><tt class="descname">lsnappsprofile_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.lsnappsprofile_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ca.html">ca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">lsnappsprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile_binding.html">lsnappsprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile_port_binding.html">lsnappsprofile_port_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnclient.html">lsnclient</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnclient_binding.html">lsnclient_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnclient_network6_binding.html">lsnclient_network6_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnclient_network_binding.html">lsnclient_network_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnclient_nsacl6_binding.html">lsnclient_nsacl6_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnclient_nsacl_binding.html">lsnclient_nsacl_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsndeterministicnat.html">lsndeterministicnat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup.html">lsngroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_binding.html">lsngroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnappsprofile_binding.html">lsngroup_lsnappsprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnhttphdrlogprofile_binding.html">lsngroup_lsnhttphdrlogprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnlogprofile_binding.html">lsngroup_lsnlogprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnpool_binding.html">lsngroup_lsnpool_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnrtspalgprofile_binding.html">lsngroup_lsnrtspalgprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsnsipalgprofile_binding.html">lsngroup_lsnsipalgprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsngroup_lsntransportprofile_binding.html">lsngroup_lsntransportprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnhttphdrlogprofile.html">lsnhttphdrlogprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnip6profile.html">lsnip6profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnlogprofile.html">lsnlogprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnparameter.html">lsnparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnpool.html">lsnpool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnpool_binding.html">lsnpool_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnpool_lsnip_binding.html">lsnpool_lsnip_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnrtspalgprofile.html">lsnrtspalgprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnrtspalgsession.html">lsnrtspalgsession</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnrtspalgsession_binding.html">lsnrtspalgsession_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnrtspalgsession_datachannel_binding.html">lsnrtspalgsession_datachannel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsession.html">lsnsession</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgcall.html">lsnsipalgcall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgcall_binding.html">lsnsipalgcall_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgcall_controlchannel_binding.html">lsnsipalgcall_controlchannel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgcall_datachannel_binding.html">lsnsipalgcall_datachannel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgprofile.html">lsnsipalgprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnstatic.html">lsnstatic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsntransportprofile.html">lsntransportprofile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rise.html">rise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.wf.html">wf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.wi.html">wi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html"
+                        title="previous chapter">lsn package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile_binding.html"
+                        title="next chapter">lsnappsprofile_binding module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsprofile.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

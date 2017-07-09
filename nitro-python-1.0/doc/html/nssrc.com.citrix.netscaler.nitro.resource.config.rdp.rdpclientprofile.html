@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rdpclientprofile module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="rdp package" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html" />
+    <link rel="next" title="rdpconnections module" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpconnections.html" />
+    <link rel="prev" title="rdp package" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpconnections.html" title="rdpconnections module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html" title="rdp package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html" accesskey="U">rdp package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile">
+<span id="rdpclientprofile-module"></span><h1>rdpclientprofile module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile">
+<em class="property">class </em><tt class="descname">rdpclientprofile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for RDP clientprofile resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.name">
+<tt class="descname">name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the rdp profile.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpurloverride">
+<tt class="descname">rdpurloverride</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpurloverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting determines whether the RDP parameters supplied in the vpn url override those specified in the RDP profile.&lt;br/&gt;Default value: ENABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectclipboard">
+<tt class="descname">redirectclipboard</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectclipboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the Clipboard check box on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: ENABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectdrives">
+<tt class="descname">redirectdrives</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectdrives" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the selections for Drives under More on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: DISABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectprinters">
+<tt class="descname">redirectprinters</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectprinters" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the selection in the Printers check box on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: ENABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectcomports">
+<tt class="descname">redirectcomports</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectcomports" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the selections for comports under More on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: DISABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectpnpdevices">
+<tt class="descname">redirectpnpdevices</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.redirectpnpdevices" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the selections for pnpdevices under More on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: DISABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.keyboardhook">
+<tt class="descname">keyboardhook</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.keyboardhook" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the selection in the Keyboard drop-down list on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: InFullScreenMode&lt;br/&gt;Possible values = OnLocal, OnRemote, InFullScreenMode.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.audiocapturemode">
+<tt class="descname">audiocapturemode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.audiocapturemode" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting corresponds to the selections in the Remote audio area on the Local Resources tab under Options in RDC.&lt;br/&gt;Default value: DISABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.videoplaybackmode">
+<tt class="descname">videoplaybackmode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.videoplaybackmode" title="Permalink to this definition">¶</a></dt>
+<dd><p>This setting determines if Remote Desktop Connection (RDC) will use RDP efficient multimedia streaming for video playback.&lt;br/&gt;Default value: ENABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.multimonitorsupport">
+<tt class="descname">multimonitorsupport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.multimonitorsupport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/Disable Multiple Monitor Support for Remote Desktop Connection (RDC).&lt;br/&gt;Default value: ENABLE&lt;br/&gt;Possible values = ENABLE, DISABLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpcookievalidity">
+<tt class="descname">rdpcookievalidity</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpcookievalidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>RDP cookie validity period.&lt;br/&gt;Default value: 60&lt;br/&gt;Minimum length =  60&lt;br/&gt;Maximum length =  86400.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.addusernameinrdpfile">
+<tt class="descname">addusernameinrdpfile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.addusernameinrdpfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add username in rdp file.&lt;br/&gt;Default value: NO&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpfilename">
+<tt class="descname">rdpfilename</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpfilename" title="Permalink to this definition">¶</a></dt>
+<dd><p>RDP file name to be sent to End User.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdphost">
+<tt class="descname">rdphost</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdphost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fully-qualified domain name (FQDN) of the RDP Listener.&lt;br/&gt;Maximum length =  252.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpcustomparams">
+<tt class="descname">rdpcustomparams</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.rdpcustomparams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Option for RDP custom parameters settings (if any). Custom params needs to be separated by &#8216;&amp;&#8217;.&lt;br/&gt;Default value: 0&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.psk">
+<tt class="descname">psk</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.psk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pre shared key value.&lt;br/&gt;Default value: 0.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.builtin">
+<tt class="descname">builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.builtin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a variable is a built-in (SYSTEM INTERNAL) type.&lt;br/&gt;Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add rdpclientprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update rdpclientprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of rdpclientprofile resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete rdpclientprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the rdpclientprofile resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of rdpclientprofile resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the rdpclientprofile resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of rdpclientprofile resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Rdpurloverride">
+<em class="property">class </em><tt class="descname">Rdpurloverride</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Rdpurloverride" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Rdpurloverride.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Rdpurloverride.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Rdpurloverride.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Rdpurloverride.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Keyboardhook</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook.OnLocal">
+<tt class="descname">OnLocal</tt><em class="property"> = 'OnLocal'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook.OnLocal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook.OnRemote">
+<tt class="descname">OnRemote</tt><em class="property"> = 'OnRemote'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook.OnRemote" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook.InFullScreenMode">
+<tt class="descname">InFullScreenMode</tt><em class="property"> = 'InFullScreenMode'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Keyboardhook.InFullScreenMode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectcomports">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Redirectcomports</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectcomports" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectcomports.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectcomports.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectcomports.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectcomports.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.MODIFIABLE">
+<tt class="descname">MODIFIABLE</tt><em class="property"> = 'MODIFIABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.MODIFIABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.DELETABLE">
+<tt class="descname">DELETABLE</tt><em class="property"> = 'DELETABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.DELETABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.IMMUTABLE">
+<tt class="descname">IMMUTABLE</tt><em class="property"> = 'IMMUTABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.IMMUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.PARTITION_ALL">
+<tt class="descname">PARTITION_ALL</tt><em class="property"> = 'PARTITION_ALL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Builtin.PARTITION_ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Multimonitorsupport">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Multimonitorsupport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Multimonitorsupport" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Multimonitorsupport.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Multimonitorsupport.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Multimonitorsupport.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Multimonitorsupport.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Addusernameinrdpfile">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Addusernameinrdpfile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Addusernameinrdpfile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Addusernameinrdpfile.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Addusernameinrdpfile.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Addusernameinrdpfile.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Addusernameinrdpfile.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Videoplaybackmode">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Videoplaybackmode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Videoplaybackmode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Videoplaybackmode.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Videoplaybackmode.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Videoplaybackmode.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Videoplaybackmode.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectclipboard">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Redirectclipboard</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectclipboard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectclipboard.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectclipboard.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectclipboard.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectclipboard.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectpnpdevices">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Redirectpnpdevices</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectpnpdevices" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectpnpdevices.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectpnpdevices.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectpnpdevices.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectpnpdevices.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectprinters">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Redirectprinters</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectprinters" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectprinters.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectprinters.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectprinters.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectprinters.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Audiocapturemode">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Audiocapturemode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Audiocapturemode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Audiocapturemode.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Audiocapturemode.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Audiocapturemode.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Audiocapturemode.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectdrives">
+<em class="property">class </em><tt class="descclassname">rdpclientprofile.</tt><tt class="descname">Redirectdrives</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectdrives" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectdrives.ENABLE">
+<tt class="descname">ENABLE</tt><em class="property"> = 'ENABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectdrives.ENABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectdrives.DISABLE">
+<tt class="descname">DISABLE</tt><em class="property"> = 'DISABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile.Redirectdrives.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile_response">
+<em class="property">class </em><tt class="descname">rdpclientprofile_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.rdpclientprofile_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ca.html">ca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">rdpclientprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpconnections.html">rdpconnections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpserverprofile.html">rdpserverprofile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rise.html">rise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.wf.html">wf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.wi.html">wi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html"
+                        title="previous chapter">rdp package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpconnections.html"
+                        title="next chapter">rdpconnections module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.rdp.rdpclientprofile.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

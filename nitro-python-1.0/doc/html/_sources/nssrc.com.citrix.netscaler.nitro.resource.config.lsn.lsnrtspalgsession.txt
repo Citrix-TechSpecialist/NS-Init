@@ -1,0 +1,8 @@
+lsnrtspalgsession module
+========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnrtspalgsession
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

@@ -1,0 +1,8 @@
+lsnsipalgprofile module
+=======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnsipalgprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

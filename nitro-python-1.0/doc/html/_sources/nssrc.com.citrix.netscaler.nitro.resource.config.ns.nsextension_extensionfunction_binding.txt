@@ -1,0 +1,8 @@
+nsextension_extensionfunction_binding module
+============================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_extensionfunction_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

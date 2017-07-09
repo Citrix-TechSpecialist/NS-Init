@@ -1,0 +1,8 @@
+authenticationoauthaction module
+================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.authentication.authenticationoauthaction
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
